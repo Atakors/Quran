@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SURAHS_DATA, getLocalizedSurahName } from '../constants';
-import { Surah, Ayah, GeminiSurahFeedback } from '../types';
+import { Surah, Ayah, SurahFeedback } from '../types';
 import AyahDisplay from './AyahDisplay';
 import ScoreModal from './ScoreModal';
 import { generateSurahFeedback } from '../services/geminiService';
@@ -17,7 +17,7 @@ const QuranMemorizationPage: React.FC = () => {
   const [memorizedAyahs, setMemorizedAyahs] = useState<Record<number, boolean>>({});
   const [score, setScore] = useState(0);
   const [isScoreModalOpen, setIsScoreModalOpen] = useState(false);
-  const [feedbackPromise, setFeedbackPromise] = useState<Promise<GeminiSurahFeedback | null> | null>(null);
+  const [feedbackPromise, setFeedbackPromise] = useState<Promise<SurahFeedback | null> | null>(null);
   const [isLoadingSurah, setIsLoadingSurah] = useState(false);
 
   const totalAyahsInSurah = selectedSurah ? selectedSurah.ayahs.length : 0;

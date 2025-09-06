@@ -131,10 +131,6 @@ export const PRAYER_STEPS_FAJR: Step[] = [ // Example for Fajr
   { id: 11, title: "Tasleem (Salutations)", description: "Turn head to the right saying 'Assalamu Alaikum wa Rahmatullah', then to the left similarly.", imageUrl: "https://picsum.photos/seed/salah11/300/200" },
 ];
 
-export const GEMINI_API_KEY = process.env.API_KEY; // Will be undefined in browser, must be handled.
-export const GEMINI_MODEL_TEXT = 'gemini-2.5-flash';
-// No image generation model used in this app.
-
 export const ARABIC_NORMALIZATION_MAP: Record<string, string> = {
   'أ': 'ا', 'إ': 'ا', 'آ': 'ا', 'ٱ': 'ا', // Alifs
   'ى': 'ي', // Alef Maksura to Ya

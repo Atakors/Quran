@@ -26,21 +26,6 @@ export enum NavigationTab {
   Progress = "Progress",
 }
 
-export interface GeminiQuiz {
-  question: string;
-  options: string[];
-  answer: string; // Should match one of the options
-}
-
-export interface GeminiSurahFeedback {
+export interface SurahFeedback {
   encouragement: string;
-  quiz?: GeminiQuiz;
-}
-
-export interface GroundingChunk {
-  web?: {
-    uri: string;
-    title: string;
-  };
-  // Other types of chunks can be added if needed
 }

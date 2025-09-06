@@ -38,31 +38,18 @@
     "title": "Masha'Allah!",
     "completed": "You've completed practicing Surah {{surahName}}!",
     "yourScore": "Your Score:",
-    "loadingFeedback": "Getting some words of encouragement...",
     "messageTitle": "A Message For You:",
-    "quizTitle": "Quick Quiz!",
-    "checkAnswer": "Check Answer",
-    "correct": "Correct! Masha'Allah!",
-    "incorrect": "Not quite. The correct answer was: {{answer}}",
     "continue": "Continue Learning"
   },
   "wuduPage": {
     "title": "Learn Wudu (Ablution)",
     "subtitle": "Follow these steps to perform Wudu correctly.",
-    "step": "Step {{current}} of {{total}}",
-    "questionTitle": "Have a Question about Wudu?",
-    "questionPlaceholder": "Ask something like 'Why do we wash our face?'",
-    "ask": "Ask Gemini AI",
-    "thinking": "Thinking..."
+    "step": "Step {{current}} of {{total}}"
   },
   "prayerPage": {
     "title": "Learn Salah (Fajr Prayer)",
     "subtitle": "Follow these steps to perform Fajr prayer correctly.",
-    "step": "Step {{current}} of {{total}}",
-    "questionTitle": "Have a Question about Prayer?",
-    "questionPlaceholder": "Ask something like 'What is Ruku?'",
-    "ask": "Ask Gemini AI",
-    "thinking": "Thinking..."
+    "step": "Step {{current}} of {{total}}"
   },
   "progressPage": {
     "title": "Your Progress",
@@ -86,7 +73,6 @@
     "step": "Step {{stepNumber}}"
   },
   "footer": {
-    "copyright": "© {{year}} Quran Kids Memorizer. Learning with Joy!",
-    "apiKeyNote": "Remember to use a real API Key for Gemini features."
+    "copyright": "© {{year}} Quran Kids Memorizer. Learning with Joy!"
   }
 }

@@ -3,17 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { WUDU_STEPS } from '../constants';
 import StepCard from './StepCard';
 import { ChevronLeftIcon, ChevronRightIcon, WaterDropIcon } from './IconComponents';
-import { getSimpleAnswer } from '../services/geminiService';
-import { GroundingChunk } from '../types';
-import LoadingSpinner from './LoadingSpinner';
 
 const WuduGuidePage: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState('');
-  const [sources, setSources] = useState<GroundingChunk[] | undefined>(undefined);
-  const [isLoadingAnswer, setIsLoadingAnswer] = useState(false);
 
   const nextStep = () => {
     setCurrentStepIndex((prevIndex) => (prevIndex + 1) % WUDU_STEPS.length);
@@ -21,18 +14,6 @@ const WuduGuidePage: React.FC = () => {
 
   const prevStep = () => {
     setCurrentStepIndex((prevIndex) => (prevIndex - 1 + WUDU_STEPS.length) % WUDU_STEPS.length);
-  };
-
-  const handleQuestionSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!question.trim()) return;
-    setIsLoadingAnswer(true);
-    setAnswer('');
-    setSources(undefined);
-    const result = await getSimpleAnswer("Wudu", question, i18n.language);
-    setAnswer(result.answer);
-    setSources(result.sources);
-    setIsLoadingAnswer(false);
   };
 
   return (
@@ -93,46 +74,6 @@ const WuduGuidePage: React.FC = () => {
                 ))}
             </div>
         </div>
-        
-      <div className="mt-12 p-6 bg-sky-50 rounded-lg shadow">
-        <h3 className="text-2xl font-semibold text-sky-700 mb-3">{t('wuduPage.questionTitle')}</h3>
-        <form onSubmit={handleQuestionSubmit} className="space-y-3">
-          <input
-            type="text"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            placeholder={t('wuduPage.questionPlaceholder')}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
-          />
-          <button
-            type="submit"
-            disabled={isLoadingAnswer}
-            className="w-full bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors disabled:opacity-70"
-          >
-            {isLoadingAnswer ? <LoadingSpinner size="sm" color="text-white"/> : t('wuduPage.ask')}
-          </button>
-        </form>
-        {isLoadingAnswer && <div className="mt-4 flex justify-center"><LoadingSpinner text={t('wuduPage.thinking')} /></div>}
-        {answer && !isLoadingAnswer && (
-          <div className="mt-4 p-4 bg-white rounded-md shadow">
-            <p className="text-gray-700 whitespace-pre-wrap">{answer}</p>
-            {sources && sources.length > 0 && (
-              <div className="mt-3 pt-3 border-t">
-                <h4 className="text-sm font-semibold text-gray-600">Sources:</h4>
-                <ul className="list-disc list-inside text-xs">
-                  {sources.map((source, idx) => source.web && (
-                    <li key={idx} className="mt-1">
-                      <a href={source.web.uri} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline">
-                        {source.web.title || source.web.uri}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
     </div>
   );
 };

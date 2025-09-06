@@ -3,18 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { PRAYER_STEPS_FAJR } from '../constants'; // Using Fajr as an example
 import StepCard from './StepCard';
 import { ChevronLeftIcon, ChevronRightIcon, PrayingHandsIcon } from './IconComponents';
-import { getSimpleAnswer } from '../services/geminiService';
-import { GroundingChunk } from '../types';
-import LoadingSpinner from './LoadingSpinner';
-
 
 const PrayerGuidePage: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState('');
-  const [sources, setSources] = useState<GroundingChunk[] | undefined>(undefined);
-  const [isLoadingAnswer, setIsLoadingAnswer] = useState(false);
 
   // For simplicity, this guide shows Fajr prayer. A real app might have selectors for different prayers.
   const prayerSteps = PRAYER_STEPS_FAJR;
@@ -26,19 +18,6 @@ const PrayerGuidePage: React.FC = () => {
   const prevStep = () => {
     setCurrentStepIndex((prevIndex) => (prevIndex - 1 + prayerSteps.length) % prayerSteps.length);
   };
-
-  const handleQuestionSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!question.trim()) return;
-    setIsLoadingAnswer(true);
-    setAnswer('');
-    setSources(undefined);
-    const result = await getSimpleAnswer("Salah (Prayer)", question, i18n.language);
-    setAnswer(result.answer);
-    setSources(result.sources);
-    setIsLoadingAnswer(false);
-  };
-
 
   return (
     <div className="container mx-auto p-4 md:p-8 max-w-3xl">
@@ -97,46 +76,6 @@ const PrayerGuidePage: React.FC = () => {
                 ))}
             </div>
         </div>
-      
-      <div className="mt-12 p-6 bg-emerald-50 rounded-lg shadow">
-        <h3 className="text-2xl font-semibold text-emerald-700 mb-3">{t('prayerPage.questionTitle')}</h3>
-        <form onSubmit={handleQuestionSubmit} className="space-y-3">
-          <input
-            type="text"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            placeholder={t('prayerPage.questionPlaceholder')}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500"
-          />
-          <button
-            type="submit"
-            disabled={isLoadingAnswer}
-            className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors disabled:opacity-70"
-          >
-            {isLoadingAnswer ? <LoadingSpinner size="sm" color="text-white"/> : t('prayerPage.ask')}
-          </button>
-        </form>
-        {isLoadingAnswer && <div className="mt-4 flex justify-center"><LoadingSpinner text={t('prayerPage.thinking')} /></div>}
-        {answer && !isLoadingAnswer && (
-          <div className="mt-4 p-4 bg-white rounded-md shadow">
-            <p className="text-gray-700 whitespace-pre-wrap">{answer}</p>
-            {sources && sources.length > 0 && (
-              <div className="mt-3 pt-3 border-t">
-                <h4 className="text-sm font-semibold text-gray-600">Sources:</h4>
-                <ul className="list-disc list-inside text-xs">
-                  {sources.map((source, idx) => source.web && (
-                    <li key={idx} className="mt-1">
-                      <a href={source.web.uri} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">
-                        {source.web.title || source.web.uri}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
     </div>
   );
 };

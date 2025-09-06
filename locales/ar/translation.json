@@ -38,31 +38,18 @@
     "title": "ما شاء الله!",
     "completed": "لقد أكملت ممارسة سورة {{surahName}}!",
     "yourScore": "نتيجتك:",
-    "loadingFeedback": "جاري الحصول على بعض كلمات التشجيع...",
     "messageTitle": "رسالة لك:",
-    "quizTitle": "اختبار سريع!",
-    "checkAnswer": "تحقق من الإجابة",
-    "correct": "صحيح! ما شاء الله!",
-    "incorrect": "ليس تمامًا. الإجابة الصحيحة كانت: {{answer}}",
     "continue": "مواصلة التعلم"
   },
   "wuduPage": {
     "title": "تعلم الوضوء",
     "subtitle": "اتبع هذه الخطوات لأداء الوضوء بشكل صحيح.",
-    "step": "الخطوة {{current}} من {{total}}",
-    "questionTitle": "هل لديك سؤال عن الوضوء؟",
-    "questionPlaceholder": "اسأل شيئًا مثل 'لماذا نغسل وجوهنا؟'",
-    "ask": "اسأل Gemini AI",
-    "thinking": "يفكر..."
+    "step": "الخطوة {{current}} من {{total}}"
   },
   "prayerPage": {
     "title": "تعلم الصلاة (صلاة الفجر)",
     "subtitle": "اتبع هذه الخطوات لأداء صلاة الفجر بشكل صحيح.",
-    "step": "الخطوة {{current}} من {{total}}",
-    "questionTitle": "هل لديك سؤال عن الصلاة؟",
-    "questionPlaceholder": "اسأل شيئًا مثل 'ما هو الركوع؟'",
-    "ask": "اسأل Gemini AI",
-    "thinking": "يفكر..."
+    "step": "الخطوة {{current}} من {{total}}"
   },
   "progressPage": {
     "title": "تقدمك",
@@ -86,7 +73,6 @@
     "step": "الخطوة {{stepNumber}}"
   },
   "footer": {
-    "copyright": "© {{year}} أطفال القرآن. التعلم بفرح!",
-    "apiKeyNote": "تذكر استخدام مفتاح API حقيقي لميزات Gemini."
+    "copyright": "© {{year}} أطفال القرآن. التعلم بفرح!"
   }
 }
