@@ -1,0 +1,7 @@
+{
+  "name": "Quran Kids Memorizer",
+  "description": "An interactive web app to help children memorize the Holy Quran, learn about Wudu, and understand Prayer. Features voice recognition for recitation practice and scoring.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,92 @@
+
+{
+  "navbar": {
+    "title": "Coran Enfants",
+    "quran": "Mémorisation",
+    "wudu": "Guide Wudu",
+    "prayer": "Guide Prière",
+    "progress": "Mon Progrès"
+  },
+  "quranPage": {
+    "chooseSurah": "Choisissez une sourate à mémoriser :",
+    "progress": "Progrès : {{attempted}} / {{total}} versets essayés",
+    "currentScore": "Score actuel : {{score}}%",
+    "loadingSurah": "Chargement de la sourate...",
+    "previous": "Précédent",
+    "nextAyah": "Verset suivant",
+    "nextReview": "Suivant (ou Réviser)",
+    "finishSurah": "Terminer la sourate",
+    "viewScore": "Voir score et commentaires",
+    "tipsTitle": "Conseils pour la récitation :",
+    "tip1": "Trouvez un endroit calme pour vous concentrer.",
+    "tip2": "Récitez clairement et lentement dans le microphone.",
+    "tip3": "Si la reconnaissance est difficile, essayez d'ajuster le volume du microphone ou de parler plus près.",
+    "tip4": "La précision de la reconnaissance vocale peut varier. Le but est de s'entraîner !"
+  },
+  "ayahDisplay": {
+    "listening": "Écoute...",
+    "processing": "Traitement...",
+    "reciteAyah": "Réciter le verset",
+    "speakNow": "Parlez maintenant...",
+    "feedbackCorrect": "Masha'Allah ! Bien joué !",
+    "feedbackIncorrect": "Bon essai ! Essayons encore ce verset.",
+    "unsupported": "Désolé, la reconnaissance vocale n'est pas disponible sur votre navigateur.",
+    "youSaid": "Vous avez dit : {{transcript}}",
+    "memorized": "Mémorisé !"
+  },
+  "scoreModal": {
+    "title": "Masha'Allah !",
+    "completed": "Vous avez terminé de pratiquer la sourate {{surahName}} !",
+    "yourScore": "Votre score :",
+    "loadingFeedback": "Obtention de quelques mots d'encouragement...",
+    "messageTitle": "Un message pour vous :",
+    "quizTitle": "Quiz rapide !",
+    "checkAnswer": "Vérifier la réponse",
+    "correct": "Correct ! Masha'Allah !",
+    "incorrect": "Pas tout à fait. La bonne réponse était : {{answer}}",
+    "continue": "Continuer à apprendre"
+  },
+  "wuduPage": {
+    "title": "Apprendre le Wudu (Ablutions)",
+    "subtitle": "Suivez ces étapes pour accomplir le Wudu correctement.",
+    "step": "Étape {{current}} sur {{total}}",
+    "questionTitle": "Vous avez une question sur le Wudu ?",
+    "questionPlaceholder": "Demandez quelque chose comme 'Pourquoi nous lavons-nous le visage ?'",
+    "ask": "Demander à Gemini AI",
+    "thinking": "Réflexion..."
+  },
+  "prayerPage": {
+    "title": "Apprendre la Salat (Prière du Fajr)",
+    "subtitle": "Suivez ces étapes pour accomplir la prière du Fajr correctement.",
+    "step": "Étape {{current}} sur {{total}}",
+    "questionTitle": "Vous avez une question sur la Prière ?",
+    "questionPlaceholder": "Demandez quelque chose comme 'Qu'est-ce que le Ruku ?'",
+    "ask": "Demander à Gemini AI",
+    "thinking": "Réflexion..."
+  },
+  "progressPage": {
+    "title": "Votre Progrès",
+    "subtitle": "Masha'Allah ! Voyez tout ce que vous avez appris.",
+    "streakTitle": "Série de pratique",
+    "day": "Jour",
+    "days": "Jours",
+    "streakMessage": "Continuez ce bon travail !",
+    "streakStart": "Pratiquez aujourd'hui pour commencer une nouvelle série !",
+    "totalMemorizedTitle": "Total des versets mémorisés",
+    "totalMemorizedSubtitle": "sur {{total}}",
+    "totalMemorizedMessage": "Chaque verset est un pas de plus vers Allah !",
+    "chartTitle": "Mémorisation par sourate",
+    "chartEmpty": "Vous n'avez encore mémorisé aucun verset. Allez à l'onglet Coran pour commencer !",
+    "tooltipMemorized": "Mémorisés : {{count}}",
+    "tooltipRemaining": "Restants : {{count}}",
+    "legendMemorized": "Mémorisés",
+    "legendRemaining": "Restants"
+  },
+  "stepCard": {
+    "step": "Étape {{stepNumber}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} Coran Enfants. Apprendre avec joie !",
+    "apiKeyNote": "N'oubliez pas d'utiliser une vraie clé API pour les fonctionnalités Gemini."
+  }
+}

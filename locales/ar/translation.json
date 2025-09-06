@@ -1,0 +1,92 @@
+
+{
+  "navbar": {
+    "title": "أطفال القرآن",
+    "quran": "تحفيظ القرآن",
+    "wudu": "دليل الوضوء",
+    "prayer": "دليل الصلاة",
+    "progress": "تقدمي"
+  },
+  "quranPage": {
+    "chooseSurah": "اختر سورة لتحفيظها:",
+    "progress": "التقدم: {{attempted}} / {{total}} آيات تمت محاولتها",
+    "currentScore": "النتيجة الحالية: {{score}}٪",
+    "loadingSurah": "جاري تحميل السورة...",
+    "previous": "السابق",
+    "nextAyah": "الآية التالية",
+    "nextReview": "التالي (أو مراجعة)",
+    "finishSurah": "إنهاء السورة",
+    "viewScore": "عرض النتيجة والملاحظات",
+    "tipsTitle": "نصائح للتلاوة:",
+    "tip1": "ابحث عن مكان هادئ للتركيز.",
+    "tip2": "اقرأ بوضوح وببطء في الميكروفون.",
+    "tip3": "إذا كان التعرف صعبًا، حاول ضبط مستوى صوت الميكروفون أو التحدث عن قرب.",
+    "tip4": "قد تختلف دقة التعرف على الكلام. الهدف هو الممارسة!"
+  },
+  "ayahDisplay": {
+    "listening": "يستمع...",
+    "processing": "معالجة...",
+    "reciteAyah": "اقرأ الآية",
+    "speakNow": "تحدث الآن...",
+    "feedbackCorrect": "ما شاء الله! أحسنت صنعًا!",
+    "feedbackIncorrect": "محاولة جيدة! لنجرب تلك الآية مرة أخرى.",
+    "unsupported": "عذراً، خاصية التعرف على الكلام غير متوفرة في متصفحك.",
+    "youSaid": "لقد قلت: {{transcript}}",
+    "memorized": "تم الحفظ!"
+  },
+  "scoreModal": {
+    "title": "ما شاء الله!",
+    "completed": "لقد أكملت ممارسة سورة {{surahName}}!",
+    "yourScore": "نتيجتك:",
+    "loadingFeedback": "جاري الحصول على بعض كلمات التشجيع...",
+    "messageTitle": "رسالة لك:",
+    "quizTitle": "اختبار سريع!",
+    "checkAnswer": "تحقق من الإجابة",
+    "correct": "صحيح! ما شاء الله!",
+    "incorrect": "ليس تمامًا. الإجابة الصحيحة كانت: {{answer}}",
+    "continue": "مواصلة التعلم"
+  },
+  "wuduPage": {
+    "title": "تعلم الوضوء",
+    "subtitle": "اتبع هذه الخطوات لأداء الوضوء بشكل صحيح.",
+    "step": "الخطوة {{current}} من {{total}}",
+    "questionTitle": "هل لديك سؤال عن الوضوء؟",
+    "questionPlaceholder": "اسأل شيئًا مثل 'لماذا نغسل وجوهنا؟'",
+    "ask": "اسأل Gemini AI",
+    "thinking": "يفكر..."
+  },
+  "prayerPage": {
+    "title": "تعلم الصلاة (صلاة الفجر)",
+    "subtitle": "اتبع هذه الخطوات لأداء صلاة الفجر بشكل صحيح.",
+    "step": "الخطوة {{current}} من {{total}}",
+    "questionTitle": "هل لديك سؤال عن الصلاة؟",
+    "questionPlaceholder": "اسأل شيئًا مثل 'ما هو الركوع؟'",
+    "ask": "اسأل Gemini AI",
+    "thinking": "يفكر..."
+  },
+  "progressPage": {
+    "title": "تقدمك",
+    "subtitle": "ما شاء الله! انظر كم تعلمت.",
+    "streakTitle": "سلسلة الممارسة",
+    "day": "يوم",
+    "days": "أيام",
+    "streakMessage": "استمر في هذا العمل الرائع!",
+    "streakStart": "تدرب اليوم لبدء سلسلة جديدة!",
+    "totalMemorizedTitle": "مجموع الآيات المحفوظة",
+    "totalMemorizedSubtitle": "من أصل {{total}}",
+    "totalMemorizedMessage": "كل آية هي خطوة أقرب إلى الله!",
+    "chartTitle": "الحفظ حسب السورة",
+    "chartEmpty": "لم تحفظ أي آيات بعد. اذهب إلى علامة تبويب القرآن للبدء!",
+    "tooltipMemorized": "المحفوظة: {{count}}",
+    "tooltipRemaining": "المتبقية: {{count}}",
+    "legendMemorized": "المحفوظة",
+    "legendRemaining": "المتبقية"
+  },
+  "stepCard": {
+    "step": "الخطوة {{stepNumber}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} أطفال القرآن. التعلم بفرح!",
+    "apiKeyNote": "تذكر استخدام مفتاح API حقيقي لميزات Gemini."
+  }
+}

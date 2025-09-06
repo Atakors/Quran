@@ -1,0 +1,92 @@
+
+{
+  "navbar": {
+    "title": "Quran Kids",
+    "quran": "Quran Memorizer",
+    "wudu": "Wudu Guide",
+    "prayer": "Prayer Guide",
+    "progress": "My Progress"
+  },
+  "quranPage": {
+    "chooseSurah": "Choose a Surah to memorize:",
+    "progress": "Progress: {{attempted}} / {{total}} Ayahs Attempted",
+    "currentScore": "Current Score: {{score}}%",
+    "loadingSurah": "Loading Surah...",
+    "previous": "Previous",
+    "nextAyah": "Next Ayah",
+    "nextReview": "Next (or Review)",
+    "finishSurah": "Finish Surah",
+    "viewScore": "View Score & Feedback",
+    "tipsTitle": "Tips for Recitation:",
+    "tip1": "Find a quiet place to concentrate.",
+    "tip2": "Recite clearly and slowly into the microphone.",
+    "tip3": "If recognition is difficult, try adjusting microphone volume or speaking closer.",
+    "tip4": "The accuracy of speech recognition can vary. The goal is to practice!"
+  },
+  "ayahDisplay": {
+    "listening": "Listening...",
+    "processing": "Processing...",
+    "reciteAyah": "Recite Ayah",
+    "speakNow": "Speak now...",
+    "feedbackCorrect": "Masha'Allah! Well done!",
+    "feedbackIncorrect": "Good try! Let's try that Ayah again.",
+    "unsupported": "Sorry, speech recognition isn't available on your browser.",
+    "youSaid": "You said: {{transcript}}",
+    "memorized": "Memorized!"
+  },
+  "scoreModal": {
+    "title": "Masha'Allah!",
+    "completed": "You've completed practicing Surah {{surahName}}!",
+    "yourScore": "Your Score:",
+    "loadingFeedback": "Getting some words of encouragement...",
+    "messageTitle": "A Message For You:",
+    "quizTitle": "Quick Quiz!",
+    "checkAnswer": "Check Answer",
+    "correct": "Correct! Masha'Allah!",
+    "incorrect": "Not quite. The correct answer was: {{answer}}",
+    "continue": "Continue Learning"
+  },
+  "wuduPage": {
+    "title": "Learn Wudu (Ablution)",
+    "subtitle": "Follow these steps to perform Wudu correctly.",
+    "step": "Step {{current}} of {{total}}",
+    "questionTitle": "Have a Question about Wudu?",
+    "questionPlaceholder": "Ask something like 'Why do we wash our face?'",
+    "ask": "Ask Gemini AI",
+    "thinking": "Thinking..."
+  },
+  "prayerPage": {
+    "title": "Learn Salah (Fajr Prayer)",
+    "subtitle": "Follow these steps to perform Fajr prayer correctly.",
+    "step": "Step {{current}} of {{total}}",
+    "questionTitle": "Have a Question about Prayer?",
+    "questionPlaceholder": "Ask something like 'What is Ruku?'",
+    "ask": "Ask Gemini AI",
+    "thinking": "Thinking..."
+  },
+  "progressPage": {
+    "title": "Your Progress",
+    "subtitle": "Masha'Allah! See how much you've learned.",
+    "streakTitle": "Practice Streak",
+    "day": "Day",
+    "days": "Days",
+    "streakMessage": "Keep up the great work!",
+    "streakStart": "Practice today to start a new streak!",
+    "totalMemorizedTitle": "Total Ayahs Memorized",
+    "totalMemorizedSubtitle": "out of {{total}}",
+    "totalMemorizedMessage": "Every Ayah is a step closer to Allah!",
+    "chartTitle": "Memorization by Surah",
+    "chartEmpty": "You haven't memorized any Ayahs yet. Go to the Quran tab to start!",
+    "tooltipMemorized": "Memorized: {{count}}",
+    "tooltipRemaining": "Remaining: {{count}}",
+    "legendMemorized": "Memorized",
+    "legendRemaining": "Remaining"
+  },
+  "stepCard": {
+    "step": "Step {{stepNumber}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} Quran Kids Memorizer. Learning with Joy!",
+    "apiKeyNote": "Remember to use a real API Key for Gemini features."
+  }
+}
